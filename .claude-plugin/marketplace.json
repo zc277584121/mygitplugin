@@ -1,0 +1,26 @@
+{
+  "name": "mygitplugin-marketplace",
+  "owner": {
+    "name": "zc277584121",
+    "email": "277584121@qq.com"
+  },
+  "metadata": {
+    "description": "Git workflow automation plugins for Claude Code",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "mygitplugin",
+      "source": "./",
+      "description": "Git workflow automation plugin - fork, clone, commit, PR, and weekly summary",
+      "version": "1.0.0",
+      "author": {
+        "name": "zc277584121"
+      },
+      "homepage": "https://github.com/zc277584121/mygitplugin",
+      "repository": "https://github.com/zc277584121/mygitplugin",
+      "license": "MIT",
+      "keywords": ["git", "github", "fork", "pull-request", "workflow"]
+    }
+  ]
+}
