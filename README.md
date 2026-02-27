@@ -21,6 +21,14 @@ In Claude Code, run:
 /plugin install mygitplugin
 ```
 
+## Development
+
+To load the plugin locally for development/testing:
+
+```
+claude --plugin-dir /path/to/mygitplugin
+```
+
 ## Configuration
 
 - GitHub account: `zc277584121`
