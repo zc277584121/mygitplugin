@@ -14,21 +14,12 @@ A Claude Code plugin for automating common Git/GitHub workflows.
 
 ## Installation
 
-### Via Marketplace
+In Claude Code, run:
 
-1. Add the marketplace source:
-   ```
-   gh repo clone zc277584121/mygitplugin ~/.claude/plugins/marketplaces/mygitplugin-marketplace
-   ```
-
-2. Install the plugin in Claude Code:
-   ```
-   /plugins install mygitplugin
-   ```
-
-### Manual Installation
-
-Clone this repo and add it as a local plugin in Claude Code.
+```
+/plugin marketplace add zc277584121/mygitplugin
+/plugin install mygitplugin@mygitplugin-marketplace
+```
 
 ## Configuration
 
