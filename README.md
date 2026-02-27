@@ -18,7 +18,7 @@ In Claude Code, run:
 
 ```
 /plugin marketplace add zc277584121/mygitplugin
-/plugin install mygitplugin@mygitplugin-marketplace
+/plugin install mygitplugin
 ```
 
 ## Configuration
