@@ -32,7 +32,7 @@ claude --plugin-dir /path/to/mygitplugin
 ## Configuration
 
 - GitHub account: `zc277584121`
-- All commits are signed off by: `Cheney Zhang <277584121@qq.com>`
+- All commits are signed off by: `Cheney Zhang <chen.zhang@zilliz.com>`
 - Requires `gh` CLI to be authenticated
 
 ## License

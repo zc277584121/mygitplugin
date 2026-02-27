@@ -23,7 +23,7 @@ allowed-tools:
 
 4. **提交改动**：
    ```bash
-   git commit --signoff --author="Cheney Zhang <277584121@qq.com>" -m "<commit message>"
+   git commit --signoff --author="Cheney Zhang <chen.zhang@zilliz.com>" -m "<commit message>"
    ```
    - commit message 用英文编写，简洁描述改动内容。
    - **绝对不要**在 commit message 中提及 AI、Claude、LLM 或任何自动生成相关的字样。
@@ -33,5 +33,5 @@ allowed-tools:
 ## 注意事项
 
 - 提交前检查是否有未暂存的改动需要处理。
-- 所有 commit 都需要 `--signoff`，作者为 "Cheney Zhang <277584121@qq.com>"。
+- 所有 commit 都需要 `--signoff`，作者为 "Cheney Zhang <chen.zhang@zilliz.com>"。
 - commit message 中不能出现任何 AI 相关字样。
