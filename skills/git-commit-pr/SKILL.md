@@ -17,18 +17,20 @@ allowed-tools:
 
 1. **创建新分支**：`git checkout -b <branch-name>`，分支名由用户指定或根据改动内容自动生成。
 
-2. **暂存文件**：`git add` 相关改动文件。不要使用 `git add -A` 或 `git add .`，而是逐个添加相关文件。
+2. **Review 改动**：先用 `git status` 和 `git diff` 自行检查所有改动，确保没有把临时文件、调试代码或不相关的文件混进来。
 
-3. **提交改动**：
+3. **暂存文件**：`git add` 相关改动文件。不要使用 `git add -A` 或 `git add .`，而是逐个添加相关文件。
+
+4. **提交改动**：
    ```bash
    git commit --signoff --author="Cheney Zhang <277584121@qq.com>" -m "<commit message>"
    ```
    - commit message 用英文编写，简洁描述改动内容。
    - **绝对不要**在 commit message 中提及 AI、Claude、LLM 或任何自动生成相关的字样。
 
-4. **推送分支**：`git push origin <branch-name>`。
+5. **推送分支**：`git push origin <branch-name>`。
 
-5. **创建 PR**：
+6. **创建 PR**：
    ```bash
    gh pr create --repo <official-owner/repo> --title "<PR title>" --body "<PR description>"
    ```
@@ -36,7 +38,7 @@ allowed-tools:
    - **绝对不要**在 PR 标题或描述中提及 AI、Claude、LLM 或任何自动生成相关的字样。
    - 不要添加 `Co-Authored-By` 之类的 AI 相关标记。
 
-6. **如果用户有合并权限且要求合并**：
+7. **如果用户有合并权限且要求合并**：
    - Review PR 并合并。
    - 切回主分支（main 或 master）。
    - 同步上游：`git fetch official && git reset --hard official/<main-branch>`。

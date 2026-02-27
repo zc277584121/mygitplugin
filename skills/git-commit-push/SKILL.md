@@ -17,16 +17,18 @@ allowed-tools:
 
 1. **创建新分支**：`git checkout -b <branch-name>`，分支名由用户指定或根据改动内容自动生成。如果用户希望直接在当前分支提交，则跳过此步。
 
-2. **暂存文件**：`git add` 相关改动文件。不要使用 `git add -A` 或 `git add .`，而是逐个添加相关文件。
+2. **Review 改动**：先用 `git status` 和 `git diff` 自行检查所有改动，确保没有把临时文件、调试代码或不相关的文件混进来。
 
-3. **提交改动**：
+3. **暂存文件**：`git add` 相关改动文件。不要使用 `git add -A` 或 `git add .`，而是逐个添加相关文件。
+
+4. **提交改动**：
    ```bash
    git commit --signoff --author="Cheney Zhang <277584121@qq.com>" -m "<commit message>"
    ```
    - commit message 用英文编写，简洁描述改动内容。
    - **绝对不要**在 commit message 中提及 AI、Claude、LLM 或任何自动生成相关的字样。
 
-4. **推送分支**：`git push origin <branch-name>`。
+5. **推送分支**：`git push origin <branch-name>`。
 
 ## 注意事项
 
