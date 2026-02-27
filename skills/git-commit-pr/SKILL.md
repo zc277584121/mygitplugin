@@ -40,6 +40,8 @@ allowed-tools:
    - Review PR 并合并。
    - 切回主分支（main 或 master）。
    - 同步上游：`git fetch official && git reset --hard official/<main-branch>`。
+   - 删除本地临时分支：`git branch -d <branch-name>`。
+   - 删除远端临时分支：`git push origin --delete <branch-name>`。
 
 ## 注意事项
 
