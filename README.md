@@ -11,6 +11,7 @@ A Claude Code plugin for automating common Git/GitHub workflows.
 | `git-create-repo` | Create a new GitHub repo and clone it locally |
 | `git-commit-push` | Commit changes and push to origin (no PR) |
 | `git-summarize-weekly` | Summarize weekly GitHub contributions for weekly reports |
+| `git-get-notification` | Check GitHub notifications and recent Issues/PRs for monitored repos |
 
 ## Installation
 
