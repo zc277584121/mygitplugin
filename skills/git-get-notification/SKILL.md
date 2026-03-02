@@ -62,6 +62,7 @@ gh api "repos/REPO_NAME/issues?state=all&sort=created&direction=desc&per_page=20
 
 - Use `date -d '7 days ago' -u +%Y-%m-%dT%H:%M:%SZ` to compute the since date.
 - If a repo has more than 10 recent issues, show only the 10 most recent and note how many were omitted.
+- **Skip closed issues** — only show open issues.
 
 ### Step 4: Fetch Recent PRs
 
@@ -72,6 +73,7 @@ gh api "repos/REPO_NAME/pulls?state=all&sort=updated&direction=desc&per_page=20"
 ```
 
 - If a repo has more than 10 recent PRs, show only the 10 most recent and note how many were omitted.
+- **Skip merged and closed PRs** — only show open PRs.
 
 ### Step 5: Output Format
 
