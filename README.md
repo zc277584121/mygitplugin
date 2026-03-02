@@ -15,7 +15,31 @@ A Claude Code plugin for automating common Git/GitHub workflows.
 
 ## Installation
 
-In Claude Code, run:
+### Via npx skills (works with 40+ agents)
+
+**Claude Code** (project-level):
+```
+npx skills add zc277584121/mygitplugin -a claude-code
+```
+
+**Claude Code** (global, available across all projects):
+```
+npx skills add zc277584121/mygitplugin -a claude-code -g
+```
+
+**Cursor**:
+```
+npx skills add zc277584121/mygitplugin -a cursor
+```
+
+**Other agents** — replace `<agent-name>` as needed:
+```
+npx skills add zc277584121/mygitplugin -a <agent-name>
+```
+
+Common agent names: `windsurf`, `github-copilot`, `cline`, `roo`, `gemini-cli`, `goose`, `kilo`, `augment`.
+
+### Via Claude Code Plugin System
 
 ```
 /plugin marketplace add zc277584121/mygitplugin
