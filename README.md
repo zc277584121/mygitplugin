@@ -12,7 +12,7 @@ A Claude Code plugin for automating common Git/GitHub workflows.
 | `git-commit-push` | Commit changes and push to origin (no PR) |
 | `git-summarize-weekly` | Summarize weekly GitHub contributions for weekly reports |
 | `git-get-notification` | Check GitHub notifications and recent Issues/PRs for monitored repos |
-| `git-sync-main` | Sync local main branch with the latest code from the official upstream remote |
+| `git-sync-main` | Sync local main branch with the latest code from official upstream or origin remote |
 
 ## Installation
 
