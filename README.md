@@ -1,57 +1,83 @@
 # mygitplugin
 
-A Claude Code plugin for automating common Git/GitHub workflows.
+A collection of Git workflow skills for AI coding agents — fork, clone, commit, PR, sync, notifications, and weekly summaries.
 
-## Skills
+## Available Skills
 
 | Skill | Description |
 |-------|-------------|
-| `git-fork-clone` | Fork a GitHub repo and clone it locally with proper remote setup |
-| `git-commit-pr` | Commit changes and create a PR to the upstream (official) repo |
-| `git-create-repo` | Create a new GitHub repo and clone it locally |
-| `git-commit-push` | Commit changes and push to origin (no PR) |
-| `git-summarize-weekly` | Summarize weekly GitHub contributions for weekly reports |
-| `git-get-notification` | Check GitHub notifications and recent Issues/PRs for monitored repos |
-| `git-sync-main` | Sync local main branch with the latest code from official upstream or origin remote |
+| [`git-fork-clone`](./skills/git-fork-clone/) | Fork a GitHub repo and clone it locally with proper remote setup. |
+| [`git-commit-pr`](./skills/git-commit-pr/) | Commit changes and create a PR to the upstream official repo. |
+| [`git-create-repo`](./skills/git-create-repo/) | Create a new GitHub repo and clone it locally. |
+| [`git-commit-push`](./skills/git-commit-push/) | Commit changes and push to origin without creating a PR. |
+| [`git-summarize-weekly`](./skills/git-summarize-weekly/) | Summarize weekly GitHub contributions for weekly reports. |
+| [`git-get-notification`](./skills/git-get-notification/) | Check GitHub notifications and recent Issues/PRs for monitored repos. |
+| [`git-sync-main`](./skills/git-sync-main/) | Sync the local main branch with the latest code from official upstream or origin. |
+
+## Quick Start
+
+Install all skills globally to **all supported AI coding agents** with one command:
+
+```bash
+npx skills add zc277584121/mygitplugin --all -g
+```
+
+Update to the latest version:
+
+```bash
+npx skills update
+```
 
 ## Installation
 
-### Via npx skills (works with 40+ agents)
+Install using [npx skills](https://skills.sh):
 
-**Claude Code** (project-level):
-```
-npx skills add zc277584121/mygitplugin -a claude-code
+### Install to all agents at once
+
+```bash
+# Global — available in all projects, all agents
+npx skills add zc277584121/mygitplugin --all -g
+
+# Project-level — current project only, all agents
+npx skills add zc277584121/mygitplugin --all
 ```
 
-**Claude Code** (global, available across all projects):
-```
+### Install to a specific agent
+
+```bash
 npx skills add zc277584121/mygitplugin -a claude-code -g
+npx skills add zc277584121/mygitplugin -a cursor -g
+npx skills add zc277584121/mygitplugin -a codex -g
 ```
 
-**Cursor**:
-```
-npx skills add zc277584121/mygitplugin -a cursor
+Other supported agents: `windsurf`, `github-copilot`, `cline`, `roo`, `gemini-cli`, `goose`, `kilo`, `augment`, `opencode`, and [40+ more](https://skills.sh).
+
+> **Project vs Global**: Without `-g`, skills are installed into the current project directory. With `-g`, they go to your home directory and are available across projects.
+
+## Updating
+
+```bash
+# Check for updates
+npx skills check
+
+# Update all globally installed skills to latest
+npx skills update
 ```
 
-**Other agents** — replace `<agent-name>` as needed:
-```
-npx skills add zc277584121/mygitplugin -a <agent-name>
-```
+To update project-level installs, re-run the `npx skills add` command.
 
-Common agent names: `windsurf`, `github-copilot`, `cline`, `roo`, `gemini-cli`, `goose`, `kilo`, `augment`.
+## Claude Code Plugin
 
-### Via Claude Code Plugin System
+This repository can also be installed through the Claude Code plugin system:
 
-```
+```bash
 /plugin marketplace add zc277584121/mygitplugin
 /plugin install mygitplugin
 ```
 
-## Development
+For local plugin development/testing:
 
-To load the plugin locally for development/testing:
-
-```
+```bash
 claude --plugin-dir /path/to/mygitplugin
 ```
 
